@@ -25,7 +25,7 @@ But you might want to do:
   AttributeError: 'NoneType' object has no attribute 'startswith'
 
 With nihil, you can do:
-  >>> print a_dict.get('where', nihil).startswith('g')
+  >>> a_dict.get('where', nihil).startswith('g')
   nihil()
 
 Note that casting to bool returns false, so you can easily test..:
@@ -40,3 +40,21 @@ and it will return itself:
   nihil()
 
 And remember, ex nihilo nihil fit.
+
+It can also do some basic arithmetic and binary operations, adhering
+to the standard additive and multiplicative properties of zero.
+
+  >>> nihil + 5
+  5
+
+  >>> nihil - 5
+  -5
+
+  >>> nihil * 5
+  nihil()
+
+  >>> nihil | 5
+  5
+
+  >>> nihil & 5
+  nihil()

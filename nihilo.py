@@ -16,4 +16,33 @@ class nihil(object):
     def __repr__(self):
         return u"nihil()"
 
+    def __str__(self):
+        return ""
+
+    def __add__(self, other):
+        return other
+    def __radd__(self, other):
+        return other
+    def __sub__(self, other):
+        return -other
+    def __rsub(self, other):
+        return -other
+    def __or__(self, other):
+        return other
+    def __ror__(self, other):
+        return other
+    def __xor__(self, other):
+        return other
+    def __rxor__(self, other):
+        return other
+
+    def __mul__(self, other):
+        return self
+    def __rmul__(self, other):
+        return self
+    def __and__(self, other):
+        return self
+    def __rand__(self, other):
+        return self
+
 nihil = nihil()
